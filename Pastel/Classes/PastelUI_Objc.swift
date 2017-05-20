@@ -40,6 +40,10 @@ open class PastelView_Objc: PastelView {
     public func animationDuration(_ duration: TimeInterval) {
         super.animationDuration(duration)
     }
+    
+    public func startAnimation() {
+        super.startAnimation()
+    }
 }
 
 // Button
@@ -75,6 +79,10 @@ open class PastelButton_Objc: PastelButton {
     
     public func animationDuration(_ duration: TimeInterval) {
         super.animationDuration(duration)
+    }
+    
+    public func startAnimation() {
+        super.startAnimation()
     }
 }
 
@@ -112,6 +120,10 @@ open class PastelLabel_Objc: PastelLabel {
     public func animationDuration(_ duration: TimeInterval) {
         super.animationDuration(duration)
     }
+    
+    public func startAnimation() {
+        super.startAnimation()
+    }
 }
 
 // TextField
@@ -148,6 +160,10 @@ open class PastelTextfield_Objc: PastelTextfield {
     public func animationDuration(_ duration: TimeInterval) {
         super.animationDuration(duration)
     }
+    
+    public func startAnimation() {
+        super.startAnimation()
+    }
 }
 
 // TextView
@@ -183,6 +199,10 @@ open class PastelTextView_Objc: PastelTextView {
     
     public func animationDuration(_ duration: TimeInterval) {
         super.animationDuration(duration)
+    }
+    
+    public func startAnimation() {
+        super.startAnimation()
     }
 }
 

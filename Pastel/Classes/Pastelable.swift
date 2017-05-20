@@ -48,13 +48,13 @@ public protocol Pastelable {
     func end(customPoint: CGPoint)
     
     func animationDuration(_ duration: TimeInterval)
+    func startAnimation()
 }
 
 public extension Pastelable {
     func setupPastel() {
         pastel.frame = frame
         layer.insertSublayer(pastel, at: 0)
-        pastel.startAnimation()
     }
     
     public func addColor(_ color: UIColor) {
@@ -90,5 +90,9 @@ public extension Pastelable {
     
     public func animationDuration(_ duration: TimeInterval) {
         pastel.animationDuration = duration
+    }
+    
+    public func startAnimation() {
+        pastel.startAnimation()
     }
 }
