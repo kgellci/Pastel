@@ -33,6 +33,26 @@ open class PastelView: UIView, Pastelable {
 
 open class PastelButton: UIButton, Pastelable {
     public var pastel = Pastel()
+    public var maskToText = false {
+        didSet {
+            if maskToText {
+                self.maskToImage = false
+                self.mask = self.titleLabel
+            } else {
+                self.mask = nil
+            }
+        }
+    }
+    public var maskToImage = false {
+        didSet {
+            if maskToText {
+                self.maskToText = false
+                self.mask = self.imageView
+            } else {
+                self.mask = nil
+            }
+        }
+    }
     
     public override init(frame: CGRect) {
         super.init(frame: frame)

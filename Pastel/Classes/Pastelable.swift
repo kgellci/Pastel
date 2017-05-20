@@ -59,13 +59,11 @@ public extension Pastelable {
     
     public func addColor(_ color: UIColor) {
         pastel.gradientColors.append(color)
-        pastel.startAnimation()
     }
     
     public func setColors(_ colors: [UIColor]) {
         guard colors.count > 0 else { return }
         pastel.gradientColors = colors
-        pastel.startAnimation()
     }
     
     public func setColors(gradient: PastelGradient) {
